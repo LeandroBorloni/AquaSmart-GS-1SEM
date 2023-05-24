@@ -1,9 +1,9 @@
 # AquaSmart-GS-1SEM
 
-Global Solution FIAP - 1º Semestre
+### Global Solution FIAP - 1º Semestre
 Desenvolvimento de uma aplicação WEB para gerenciamento de gastos de água apresentando dados e dashboards
-Turma: 3ECR
-Integrantes: 
-Heitor Kalvon Souza         RM 88594
-Leandro Serrano Borloni     RM 86867
-Lucas Bertini Alencar       RM 86920
+#### Turma: 3ECR
+#### Integrantes: 
+- Heitor Kalvon Souza         RM 88594
+- Leandro Serrano Borloni     RM 86867
+- Lucas Bertini Alencar       RM 86920
