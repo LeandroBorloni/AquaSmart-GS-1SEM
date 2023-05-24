@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --aqua: #22C5C5;
+    --fonte: 'Red Hat Mono';
+}
+
+body {
+    background-image: url(../images/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+li {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: var(--fonte);
+    font-size: 1.5rem;
+}
+
+.botao-dashboard {
+    background-color: var(--aqua) ;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#titulo-pagina {
+    font-size: 3.5rem;
+    font-family: var(--fonte);
+    margin: 1rem 3rem;
+}
