@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>AquaSmart</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+            <a id="titulo-pagina" class="navbar-brand text-success" href="#"><strong class="text-info">Aqua</strong>Smart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-central" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Análise e Dashboards</a>
+                    </li>
+                    <li class="nav-item botao-dashboard">
+                        <a class="nav-link active" href="./index-cadastro.html">Cadastro de despesas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Filtros
+                        </a>
+                        <ul class="dropdown-menu bg-dark-subtle">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="box">
+            <div class="container mt-3 d-flex justify-content-center">
+                <button type="button" class="btn btn-dark fs-4 px-4 py-2 mx-5 fonte" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Cadastrar despesas
+                </button>
+                <form class="d-flex mx-5" role="search">
+                    <input id="busca" class="form-control me-2 fs-4 fonte" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-success fs-4 px-4 py-2 fonte" type="submit">Buscar</button>
+                </form>
+                <!-- Button trigger modal -->
+                <div class="row mt-3" id="pedidos">
+        
+                </div> <!-- Final da linha SPA -->
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade bg-transparent text-light" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header p-4">
+                        <h1 class="modal-title fs-2 m-2 fonte" id="exampleModalLabel">Cadastrar despesas</h1>
+                        <button type="button" class="btn-close fs-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form>
+                            <div class="mb-4">
+                                <label for="nome" class="form-label fs-3 fonte">Nome</label>
+                                <input type="text" class="form-control fs-4 fonte" id="nome"
+                                aria-describedby="text">
+                            </div>
+                            <div class="mb-4">
+                                <label for="" class="form-label fs-3 fonte">Região</label>
+                                <select class="form-select form-select-sm mb-3 fs-4 fonte" aria-label=".form-select-sm example" id="regiao">
+                                    <option selected>Zona Sul</option>
+                                    <option>Zona Norte</option>
+                                    <option>Zona Leste</option>
+                                    <option>Zona Oeste</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="consumo" class="form-label fs-3 fonte">Consumo atual de água em metros cúbicos</label>
+                                <input type="number" class="form-control fs-4 fonte" id="consumo">
+                            </div>
+                            <div class="mb-4">
+                                <label for="valor-taxa" class="form-label fs-3 fonte">Valor da taxa atual de água por metro cúbico</label>
+                                <input type="number" class="form-control fs-4 fonte" id="valor-taxa">
+                            </div>
+                            <div class="mb-4">
+                                <label for="valor-total" class="form-label fs-3 fonte">Valor total da conta de água atual</label>
+                                <input type="text" class="form-control fs-4 fonte" id="valor-total">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer p-4">
+                        <button type="button" class="btn btn-danger fs-4 px-4 py-2 fonte" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success fs-4 px-4 py-2 fonte" id="save">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src=""></script>
+</body>
+
+</html>

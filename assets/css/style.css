@@ -12,9 +12,44 @@ html {
 body {
     background-image: url(../images/bg-image.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100vw;
 }
 
+
+/* ------> LOADER DA PAGINA <-------- */ 
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+  
+.spin {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 16px solid #999;
+    border-top: 16px solid #3EC73B;
+    animation: spin 1.5s linear infinite;
+}
+  
+.hide {
+    display: none;
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+/* ------> NAVBAR <-------- */ 
 li {
     margin: 1rem;
     padding: 1rem;
@@ -25,11 +60,69 @@ li {
 .botao-dashboard {
     background-color: var(--aqua) ;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 #titulo-pagina {
     font-size: 3.5rem;
     font-family: var(--fonte);
     margin: 1rem 3rem;
+}
+
+.navbar-central {
+    padding: 0 15rem;
+}
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.focus-in-expand-itens {
+	-webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+
+
+/* ------> SECTION <-------- */ 
+.box {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 3rem;
+    padding: 1.5rem;
+}
+
+button.fonte {
+    font-family: var(--fonte);
+}
+
+.fonte {
+    font-family: var(--fonte);
 }
