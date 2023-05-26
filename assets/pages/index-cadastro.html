@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
-            <a id="titulo-pagina" class="navbar-brand text-success" href="#"><strong class="text-info">Aqua</strong>Smart</a>
+            <a class="navbar-brand text-success" href="../../index.html"><strong class="text-info">Aqua</strong>Smart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,10 @@
                             Filtros
                         </a>
                         <ul class="dropdown-menu bg-dark-subtle">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a id="zona-sul" class="dropdown-item" href="#">Zona Sul</a></li>
+                            <li><a id="zona-norte" class="dropdown-item" href="#">Zona Norte</a></li>
+                            <li><a id="zona-leste" class="dropdown-item" href="#">Zona Leste</a></li>
+                            <li><a id="zona-oeste" class="dropdown-item" href="#">Zona Oeste</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -47,19 +48,20 @@
     </nav>
     <section>
         <div class="box">
-            <div class="container mt-3 d-flex justify-content-center">
+            <div class="container mt-3 d-flex justify-content-between">
                 <button type="button" class="btn btn-dark fs-4 px-4 py-2 mx-5 fonte" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Cadastrar despesas
                 </button>
-                <form class="d-flex mx-5" role="search">
-                    <input id="busca" class="form-control me-2 fs-4 fonte" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="btn btn-success fs-4 px-4 py-2 fonte" type="submit">Buscar</button>
-                </form>
                 <!-- Button trigger modal -->
-                <div class="row mt-3" id="despesas">
+                <form class="d-flex mx-5 mt-3" role="search">
+                    <input id="busca" class="form-control me-2 fs-4 fonte barra-pesquisa" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                </form>
+            </div>
+            <div class="container mt-3">
+                <div class="row mt-3 px-5" id="despesas">
         
                 </div> <!-- Final da linha SPA -->
-            </div>
+            </div> <!-- Final do Container -->
         </div>
 
         <!-- Modal -->
@@ -113,7 +115,6 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
-
 </body>
 
 </html>
