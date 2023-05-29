@@ -6,13 +6,14 @@ html {
 
 :root {
     --aqua: #22C5C5;
+    --branco: #f2f2f2;
     --fonte: 'Poppins';
 }
 
 body {
     background-image: url(../images/bg-image.svg);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
 }
 
 
@@ -117,7 +118,7 @@ a.navbar-brand {
 .box {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 3rem;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 5px;
 }
 
@@ -151,4 +152,55 @@ h6.card-subtitle {
 p.card-text {
     font-size: 1.4rem;
     font-family: var(--fonte);
+}
+
+/* ------> ANALISE E DASHBOARD <-------- */
+h1.titulo-table {
+    font-family: var(--fonte);
+    text-align: center;
+    color: var(--branco);
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+table {
+    font-family: var(--fonte);
+}
+
+table.table th {
+    text-align: left;
+    padding: 2rem;
+    font-size: 1.3rem;
+    background-color: #A9A9A9;
+    font-weight: bold;
+}
+
+table.table td {
+    text-align: left;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+    
+tr {
+    background-color: var(--branco);
+}
+    
+#analise {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-family: var(--fonte);
+}
+
+h2.titulo-analise {
+    color: var(--branco);
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+p.media {
+    background-color: var(--aqua);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }

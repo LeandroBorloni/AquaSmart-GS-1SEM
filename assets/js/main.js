@@ -97,7 +97,6 @@ function cadastrarDespesa() {
         consumo_atual: consumo_atual,
         valor_taxa: valor_taxa,
         valor_total: valor_total
-
     }
 
     if(!validar(Despesa.nome, document.querySelector("#nome")))return
@@ -120,7 +119,7 @@ function createCard(Despesa) {
                 <div class="card-body">
                     <h5 class="card-title text-center">${Despesa.regiao}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary text-center">${Despesa.nome}</h6>
-                    <p class="card-text">- Consumo atual: ${Despesa.consumo_atual} m3</p>
+                    <p class="card-text">- Consumo atual: ${Despesa.consumo_atual} m³</p>
                     <p class="card-text">- Valor da taxa: R$ ${Despesa.valor_taxa}</p>
                     <p class="card-text">- Valor total da conta: R$ ${Despesa.valor_total}</p>
                 </div>

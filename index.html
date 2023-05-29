@@ -34,7 +34,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="./assets/pages/index-cadastro.html">Cadastro de despesas</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Filtros
@@ -45,7 +45,7 @@
                                 <li><a id="zona-leste" class="dropdown-item" href="#">Zona Leste</a></li>
                                 <li><a id="zona-oeste" class="dropdown-item" href="#">Zona Oeste</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,22 @@
         <section>
             <div class="box">
                 <div>
-                    <h3 id="media"></h3>
+                    <h1 class="titulo-table">Análise de Consumo de Água</h1>
+  
+                    <table id="createTable" class="table">
+                        <tr>
+                            <th>Região</th>
+                            <th>Consumo de água (m³)</th>
+                            <th>Valor taxa da conta de água</th>
+                            <th>Valor total da conta de água</th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="analise">
+                    <h2 class="titulo-analise">Dashboard de média</h2>
+                    <p class="media">Média de consumo de água: <span id="avgConsumo"></span> m³</p>
+                    <p class="media">Média do valor taxa da conta de água: R$ <span id="avgTaxa"></span></p>
+                    <p class="media">Média do valor total da conta de água: R$ <span id="avgConta"></span></p>
                 </div>
             </div>
         </section>
