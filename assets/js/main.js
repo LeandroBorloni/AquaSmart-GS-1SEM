@@ -80,6 +80,7 @@ document.querySelector("#zona-oeste").addEventListener("click", () => {
     })
     filtrar(despesasZonaOeste)
 })
+
 /* Função para cadastrar uma Despesa */
 function cadastrarDespesa() {
     const nome = document.querySelector("#nome").value
