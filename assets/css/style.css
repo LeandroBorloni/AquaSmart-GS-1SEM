@@ -134,6 +134,10 @@ input.barra-pesquisa {
     width: 30vw;
 }
 
+li {
+    z-index: 10;
+}
+
 /* ------> CARD <-------- */
 div.card-header {
     font-size: 1.8rem;
@@ -204,3 +208,4 @@ p.media {
     border-radius: 0.5rem;
     font-size: 1.5rem;
 }
+
